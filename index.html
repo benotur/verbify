@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verbify - Home</title>
+    <link rel="icon" type="image/x-icon" href="./images/verbifytransparent.png" />
+    <script src="https://kit.fontawesome.com/4e794a5347.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/quiz.css" />
+</head>
+
+<body>
+    <div class="container">
+        <a id="logoutAppBtn" class="logout buttons" style="display: none"><i class="fas fa-right-from-bracket"></i></a>
+        <a id="volumeBtn"><i class="fas fa-volume-high"></i></a>
+        <div id="volumeMenu" style="display: none">
+            <input type="range" id="volumeSlider" min="0" max="100" value="50" />
+        </div>
+
+        <div id="customAlertContainer" style="display: none; position: fixed; top: 20px; left: 50%; transform: translateX(-50%); background-color: #f8d7da; color: #721c24; padding: 10px 20px; border: 1px solid #f5c6cb; border-radius: 5px; z-index: 1000;">
+            <span id="customAlertMessage"></span>
+        </div>
+
+        <h1>Verbify</h1>
+        <div id="loginContainer">
+            <h2>Welcome to Verbify</h2>
+            <p>Please enter your credentials:</p>
+            <input type="text" id="usernameInput" class="input-field" placeholder="Your Username" />
+            <input type="password" id="passwordInput" class="input-field" placeholder="Your Password" />
+            <div class="buttons">
+                <a id="registerAppBtn" class="registerButtons"><i class="fas fa-user-plus"></i> Register</a>
+                <a id="loginAppBtn" class="loginButtons"><i class="fas fa-sign-in-alt"></i> Login</a>
+            </div>
+            <p id="resultReset"></p>
+        </div>
+
+        <div id="quizContainer" style="display: none">
+            <div id="usernameDisplay"></div>
+            <div class="language-btn-container">
+                <select id="languageSelect" class="language-select" aria-label="Select Language">
+                    <option value="spanish">Spanish</option>
+                    <option value="german">German</option>
+                    <option value="french">French</option>
+                    <option value="italian">Italian</option>
+                    <option value="hungarian">Hungarian</option>
+                    <option value="japanese">Japanese</option>
+                    <option value="korean">Korean</option>
+                    <option value="turkish">Turkish</option>
+                    <option value="swahili">Swahili</option>
+                    <option value="slovak">Slovak</option>
+                    <option value="czech">Czech</option>
+                    <option value="russian">Russian</option>
+                    <option value="polish">Polish</option>
+                    <option value="serbocroatian">SerboCroatian</option>
+                    <option value="swedish">Swedish</option>
+                    <option value="norwegian">Norwegian</option>
+                    <option value="danish">Danish</option>
+                    <option value="finnish">Finnish</option>
+                  </select>
+            </div>
+            
+            <div class="profiles">
+                <a href="profiles.html" id="profileBtn" aria-label="Go to Profile">
+                  <button>
+                    <i class="fas fa-user"></i> Profile
+                  </button>
+                </a>
+            </div>
+            
+            <div class="score-display" id="scoreDisplay">0 / 0</div>
+            <p id="timerDisplay"></p>
+            <p id="result"></p>
+            <button id="toggleDirectionBtn">Translate to English</button>
+            <div id="verbDisplay" class="verb-display"></div>
+            <input type="text" id="translationInput" class="input-field" placeholder="Enter translation" />
+            <button id="checkBtn" aria-label="Check translation">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <div id="navbarContainer" class="navbar" style="display: none">
+            <a href="vocabulary.html" class="navButtons"><i class="fas fa-list"></i></a>
+            <a href="index.html" class="navButtons"><i class="fas fa-home"></i></a>
+            <a href="leaderboard.html" class="navButtons"><i class="fas fa-trophy"></i></a>
+            <a href="achievements.html" class="navButtons"><i class="fas fa-award"></i></a>
+        </div>
+    </div>
+
+    <script src="./scripts/script.js" type="module"></script>
+</body>
+
+</html>

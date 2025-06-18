@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Protest+Riot&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
+  background: #333333;
+  background: var(--background-gradient, linear-gradient(to right, #ed213a, #93291e));
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+} 
+
+h1 {
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+  font-size: 3rem;
+}
+
+h2 {
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  overflow-y: auto;
+}
+
+#progressTracking {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: left;
+}
+
+#progressTracking h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+#progressTracking div {
+  margin: 5px 0;
+}
+
+#progressChart {
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  margin-top: 1rem;
+  border-radius: 20px;
+  box-shadow: inset 0 8px 16px rgba(0, 0, 0, 0.1),
+    inset 0 0 32px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+#themeSelection {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+#cycleThemeBtn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#cycleThemeBtn:hover {
+  color: #ccc;
+}
+
+#changePasswordForm {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: inset 0 8px 16px rgba(0, 0, 0, 0.1),
+    inset 0 0 32px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#changePasswordForm h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+#changePasswordForm .input-field {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+#changePasswordForm button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #1b1b1b;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#changePasswordForm button:hover {
+  background-color: #303030;
+}
+
+#profilePicContainer {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#profilePic {
+  margin-top: 2rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+#profilePicBtn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#profilePicBtn:hover {
+  color: #ccc;
+}
+
+#profilePicMenu {
+  background-color: #1b1b1b;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+
+#profilePicOptions img {
+  margin: 5px;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+#profilePicOptions img:hover {
+  transform: scale(1.1);
+}
+
+.navbar {
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navButtons {
+  color: #303030;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  margin: 0.25rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.navButtons:hover {
+  background-color: #c5c5c5;
+}
+
+.navButtons i {
+  font-size: 20px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verbify - Achievements</title>
+  <link rel="icon" type="image/x-icon" href="./images/verbifytransparent.png">
+  <script src="https://kit.fontawesome.com/4e794a5347.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./styles/achievements.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Verbify</h1>
+    <h2>Achievements</h2>
+    
+    <div id="customAlertContainer" style="display: none; position: fixed; top: 20px; left: 50%; transform: translateX(-50%); background-color: #f8d7da; color: #721c24; padding: 10px 20px; border: 1px solid #f5c6cb; border-radius: 5px; z-index: 1000;">
+      <span id="customAlertMessage"></span>
+    </div>
+
+    <div class="achievement-buttons">
+      <button id="normalAchievementsBtn">Normal</button>
+      <button id="rankAchievementsBtn">Rank</button>
+    </div>
+
+    <div id="normalAchievementsContainer" class="achievements-container"></div>
+    <div id="rankAchievementsContainer" class="achievements-container" style="display: none;"></div>
+
+    <div class="profiles">
+        <a href="profiles.html" id="profileBtn" aria-label="Go to Profile">
+          <button>
+            <i class="fas fa-user"></i> Profile
+          </button>
+        </a>
+    </div>
+
+    <div class="navbar">
+        <a href="vocabulary.html" class="navButtons"><i class="fas fa-list"></i></a>
+        <a href="index.html" class="navButtons"><i class="fas fa-home"></i></a>
+        <a href="leaderboard.html" class="navButtons"><i class="fas fa-trophy"></i></a>
+        <a href="achievements.html" class="navButtons"><i class="fas fa-award"></i></a>
+    </div>
+  </div>
+
+  <script src="./scripts/achievements.js" type="module"></script>
+  <script src="./scripts/script.js" type="module"></script>
+</body>
+
+</html>
